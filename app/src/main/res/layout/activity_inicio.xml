@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+
+
+    android:padding="24dp"
+    >
+    <RelativeLayout
+        android:layout_width = "match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:padding="24dp">
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu" />
+
+        <LinearLayout
+    <ImageView
+        android:id="@+id/LogoUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/sharp_account_circle_24"
+        />
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hola [Name], Selecciona una categoria"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="279dp"
+        android:layout_height="158dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:
+
+        />
+
+</LinearLayout>
+</RelativeLayout>
+
+    <!-- DRAWER DERECHO -->
+<LinearLayout
+android:id="@+id/drawerMenu"
+android:layout_width="300dp"
+android:layout_height="match_parent"
+android:layout_gravity="end"
+android:orientation="vertical"
+android:background="#FF0000"
+android:padding="24dp">
+
+<!-- Opciones del menú -->
+<TextView android:text="A PUNTO DE COMENZAR" android:textStyle="bold" android:textColor="#FFF" />
+<TextView android:text="CARTELERA POR ZONA" android:textStyle="bold" android:textColor="#FFF" />
+<TextView android:text="CINES" android:textStyle="bold" android:textColor="#FFF" />
+<TextView android:text="AVISOS" android:textStyle="bold" android:textColor="#FFF" />
+<TextView android:text="CONTACTO" android:textStyle="bold" android:textColor="#FFF" />
+<TextView android:text="LÍNEA CINEMEX" android:textStyle="bold" android:textColor="#FFF" />
+<TextView android:text="CONFIGURACIÓN" android:textStyle="bold" android:textColor="#FFF" />
+</LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>

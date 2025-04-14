@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#E3F2FD"
+    android:padding="32dp"
+android:backgroundTint="@color/gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btnRegresar"
+        android:layout_width="40dp"
+        android:layout_height="44dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="RegresarLogin"
+        android:src="@drawable/baseline_keyboard_backspace_24" />
+
+    <ImageView
+        android:id="@+id/logoIma"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/sharp_account_circle_24"
+
+        />
+
+    <TextView
+        android:id="@+id/nameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/NameRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa Nombre Completo"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"/>
+    
+    <EditText
+        android:id="@+id/EmailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa Correo Electronico"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/PasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        />
+
+        <EditText
+            android:id="@+id/PasswordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar Contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black"
+            />
+
+
+    <Button
+        android:id="@+id/RegiterButton"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Registrar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
