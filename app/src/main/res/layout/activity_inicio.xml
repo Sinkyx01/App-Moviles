@@ -68,12 +68,6 @@ android:background="#FF0000"
 android:padding="24dp">
 
 <!-- Opciones del menú -->
-<TextView android:text="A PUNTO DE COMENZAR" android:textStyle="bold" android:textColor="#FFF" />
-<TextView android:text="CARTELERA POR ZONA" android:textStyle="bold" android:textColor="#FFF" />
-<TextView android:text="CINES" android:textStyle="bold" android:textColor="#FFF" />
-<TextView android:text="AVISOS" android:textStyle="bold" android:textColor="#FFF" />
-<TextView android:text="CONTACTO" android:textStyle="bold" android:textColor="#FFF" />
-<TextView android:text="LÍNEA CINEMEX" android:textStyle="bold" android:textColor="#FFF" />
-<TextView android:text="CONFIGURACIÓN" android:textStyle="bold" android:textColor="#FFF" />
+
 </LinearLayout>
     </androidx.drawerlayout.widget.DrawerLayout>
