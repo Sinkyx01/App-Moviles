@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Opción de menú 1 -->
+    <TextView
+        android:id="@+id/optionInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Inicio"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:onClick="onOptionInicioClicked"/>
+
+    <!-- Opción de menú 2 -->
+    <TextView
+        android:id="@+id/optionCatalogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Catálogo"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:onClick="onOptionCatalogoClicked"/>
+
+    <!-- Opción de menú 3 -->
+    <TextView
+        android:id="@+id/optionDetallePelicula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Detalle Película"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:onClick="onOptionDetallePeliculaClicked"/>
+
+    <!-- Opción de menú 4 -->
+    <TextView
+        android:id="@+id/optionAcercaDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Acerca de"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:onClick="onOptionAcercaDeClicked"/>
+</LinearLayout>
