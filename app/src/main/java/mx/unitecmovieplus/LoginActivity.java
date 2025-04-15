@@ -61,8 +61,8 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(this, "¡Inicio de sesión exitoso!", Toast.LENGTH_SHORT).show();
 
         // Después de iniciar sesión, redirigir al usuario a la actividad principal
-        // Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-        // startActivity(intent);
-        // finish(); // Cerrar la actividad de login
+        Intent intent = new Intent(LoginActivity.this, InicioActivity.class);
+        startActivity(intent);
+         finish(); // Cerrar la actividad de login
     }
 }

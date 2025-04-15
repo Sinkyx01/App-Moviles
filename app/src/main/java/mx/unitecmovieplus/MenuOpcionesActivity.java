@@ -1,24 +1,56 @@
 package mx.unitecmovieplus;
 
-import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
+
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Gravity;
+import androidx.core.view.GravityCompat;
+import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 public class MenuOpcionesActivity extends AppCompatActivity {
+
+    private DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_menu_opciones);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        // Inicializamos el DrawerLayout
+        drawerLayout = findViewById(R.id.drawer_layout);
+
+        // Botón para abrir el menú deslizante
+        findViewById(R.id.btnMenu).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir el menú desde la derecha
+                drawerLayout.openDrawer(GravityCompat.END);
+            }
         });
+    }
+
+    // Métodos para manejar las opciones del menú
+    public void onOptionInicioClicked(View view) {
+        startActivity(new Intent(this, InicioActivity.class));
+        drawerLayout.closeDrawer(GravityCompat.END);
+    }
+
+    public void onOptionCatalogoClicked(View view) {
+        startActivity(new Intent(this, CatalogoActivity.class));
+        drawerLayout.closeDrawer(GravityCompat.END);
+    }
+
+    public void onOptionDetallePeliculaClicked(View view) {
+        startActivity(new Intent(this, DetallePeliculaActivity.class));
+        drawerLayout.closeDrawer(GravityCompat.END);
+    }
+
+    public void onOptionAcercaDeClicked(View view) {
+        startActivity(new Intent(this, AcercaDeActivity.class));
+        drawerLayout.closeDrawer(GravityCompat.END);
     }
 }
